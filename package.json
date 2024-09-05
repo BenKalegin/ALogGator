@@ -1,0 +1,33 @@
+{
+  "name": "aloggator",
+  "version": "1.0.0",
+  "description": "ALogGator - Sumo Logic Log Viewer",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "npm run build && electron .",
+    "build": "tsc && webpack --config webpack.config.js",
+    "dev": "npm run build && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@elastic/datemath": "^5.0.3",
+    "@elastic/eui": "^84.0.0",
+    "@emotion/react": "^11.10.6",
+    "axios": "^0.21.1",
+    "electron": "^13.1.7",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@types/electron": "^1.6.10",
+    "@types/lodash": "^4.14.182",
+    "typescript": "^5.0.0",
+    "ts-loader": "^9.2.6",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
